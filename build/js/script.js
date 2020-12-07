@@ -2,7 +2,7 @@ let textContainer = document.querySelector('.content');
 let template = document.querySelector('#title-template').content;
 
 // template.
-let clicks = -6;
+
 let button = document.querySelector('.button');
 button.addEventListener('click', function () {
   textContainer.classList.remove('d-none');
