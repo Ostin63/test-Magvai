@@ -10,7 +10,7 @@ button.addEventListener('click', function () {
     
     clicks += 6;
     
-    let response = await fetch('http://jsonplaceholder.typicode.com/posts?_start=' + clicks +'&_limit=6');
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts?_start=' + clicks +'&_limit=6');
     let arr = await response.json();
 
     arr.forEach(function (element) {
