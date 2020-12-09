@@ -4,9 +4,11 @@ let template = document.querySelector('#title-template').content;
 // template.
 
 let button = document.querySelector('.button');
+let clicks = 0;
 button.addEventListener('click', async function () {
   textContainer.classList.remove('d-none');
-  let clicks = 0;
+  
+  
   let response = await fetch('https://jsonplaceholder.typicode.com/posts?_start=' + clicks + '&_limit=6');
   let arr = await response.json();
   clicks += 6;
